@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <filter id="glow-red"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow-blue"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#ff0040"/><stop offset="100%" style="stop-color:#cc0030"/></linearGradient>
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#00d4ff"/><stop offset="100%" style="stop-color:#0080aa"/></linearGradient>
+  </defs>
+  <rect width="400" height="120" fill="#0a0a1e" rx="12"/>
+  <!-- scanlines -->
+  <rect width="400" height="120" fill="url(#scanlines)" rx="12" opacity="0.1"/>
+  <!-- border -->
+  <rect x="2" y="2" width="396" height="116" fill="none" stroke="#ff0040" stroke-width="1.5" rx="10" opacity="0.6"/>
+  <!-- CODE text -->
+  <text x="200" y="54" text-anchor="middle" font-family="Orbitron, monospace" font-size="40" font-weight="900" fill="url(#grad-red)" filter="url(#glow-red)" letter-spacing="4">CODE</text>
+  <!-- NAMES text -->
+  <text x="200" y="94" text-anchor="middle" font-family="Orbitron, monospace" font-size="40" font-weight="900" fill="url(#grad-blue)" filter="url(#glow-blue)" letter-spacing="4">NAMES</text>
+  <!-- CLASSIC text -->
+  <text x="200" y="112" text-anchor="middle" font-family="Orbitron, monospace" font-size="10" fill="#ffd700" letter-spacing="8">· CLASSIC ·</text>
+  <!-- left decoration -->
+  <line x1="20" y1="60" x2="60" y2="60" stroke="#ff0040" stroke-width="1" opacity="0.7"/>
+  <!-- right decoration -->
+  <line x1="340" y1="60" x2="380" y2="60" stroke="#00d4ff" stroke-width="1" opacity="0.7"/>
+  <!-- corner dots -->
+  <circle cx="12" cy="12" r="3" fill="#ff0040" opacity="0.7"/>
+  <circle cx="388" cy="12" r="3" fill="#00d4ff" opacity="0.7"/>
+  <circle cx="12" cy="108" r="3" fill="#ff0040" opacity="0.7"/>
+  <circle cx="388" cy="108" r="3" fill="#00d4ff" opacity="0.7"/>
+</svg>
